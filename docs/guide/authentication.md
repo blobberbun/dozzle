@@ -364,6 +364,8 @@ Valid SSL keys are required because Authelia only supports SSL.
 
 Cloudflare Zero Trust is a service for authenticated access to self-hosted software. This section defines how Dozzle can be set up to use Cloudflare Zero Trust for authentication.
 
+<details>
+<summary>➡️ Click to expand Cloudflare Zero Trust example</summary>
 ```yaml [docker-compose.yml]
 services:
   dozzle:
@@ -381,6 +383,7 @@ services:
       - 8080
     restart: unless-stopped
 ```
+</details>
 
 After running the Dozzle container, configure the Application in Cloudflare Zero Trust dashboard by following the [guide](https://developers.cloudflare.com/cloudflare-one/applications/configure-apps/self-hosted-apps/).
 
